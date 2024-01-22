@@ -4,10 +4,7 @@ import torch.utils.data as data
 
 from transformers import RobertaTokenizerFast
 
-from utils_new import SYSU_LABEL2PID, SYSU_Refer, RegDB_Refer, LLCM_Refer, tokenize
-
-
-TOKEN_PATH = '/data1/dyh/models/RoBERTa/roberta-base-model'
+from utils_new import SYSU_LABEL2PID, SYSU_Refer, RegDB_Refer, LLCM_Refer, tokenize, RoBERTa_path
 
 
 class SYSUData(data.Dataset):
@@ -27,7 +24,7 @@ class SYSUData(data.Dataset):
         self.cIndex = colorIndex
         self.tIndex = thermalIndex
 
-        self.tokenizer = RobertaTokenizerFast.from_pretrained(TOKEN_PATH, local_files_only=True)
+        self.tokenizer = RobertaTokenizerFast.from_pretrained(RoBERTa_path, local_files_only=True)
 
     def __getitem__(self, index):
 
@@ -93,7 +90,7 @@ class RegDBData(data.Dataset):
         self.cIndex = colorIndex
         self.tIndex = thermalIndex
 
-        self.tokenizer = RobertaTokenizerFast.from_pretrained(TOKEN_PATH, local_files_only=True)
+        self.tokenizer = RobertaTokenizerFast.from_pretrained(RoBERTa_path, local_files_only=True)
 
     def __getitem__(self, index):
 
@@ -160,7 +157,7 @@ class LLCMData(data.Dataset):
         self.cIndex = colorIndex
         self.tIndex = thermalIndex
 
-        self.tokenizer = RobertaTokenizerFast.from_pretrained(TOKEN_PATH, local_files_only=True)
+        self.tokenizer = RobertaTokenizerFast.from_pretrained(RoBERTa_path, local_files_only=True)
 
     def __getitem__(self, index):
 
@@ -202,7 +199,7 @@ class TestData(data.Dataset):
         self.transform = transform
         self.dataset = dataset
 
-        self.tokenizer = RobertaTokenizerFast.from_pretrained(TOKEN_PATH, local_files_only=True)
+        self.tokenizer = RobertaTokenizerFast.from_pretrained(RoBERTa_path, local_files_only=True)
 
     def __getitem__(self, index):
         img1,  target1 = self.test_image[index],  self.test_label[index]

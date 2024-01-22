@@ -11,6 +11,9 @@ from torch.utils.data.distributed import Dataset,  DistributedSampler
 import nltk
 
 
+RoBERTa_path = '/data1/dyh/models/RoBERTa/roberta-base-model'
+
+
 def get_colors(sentence):
     colors = set(SYSU_COLORS + RegDB_COLORS)
     tokens = nltk.word_tokenize(sentence)

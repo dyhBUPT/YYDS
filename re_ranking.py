@@ -371,7 +371,7 @@ if __name__ == '__main__':
         'k1': [35],
         'k2': [35],
         'lam': [0.1],
-        'k3': [4],
+        'k3': [4],  # only for MA-LQE
     }
     for k, v in SEARCH_SPACE.items():
         print('============> {}: {} <==========='.format(k, v))

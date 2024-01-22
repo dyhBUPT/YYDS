@@ -10,6 +10,8 @@ import math
 from einops import rearrange
 import torch.utils.model_zoo as model_zoo
 
+from utils_new import RoBERTa_path
+
 
 class Normalize(nn.Module):
     def __init__(self, power=2):
@@ -410,8 +412,7 @@ class embed_net(nn.Module):
         self.args = args
         self.text_mode = args.text_mode
         if self.text_mode in ('v1', 'v2'):
-            self.text_encoder = RobertaModel.from_pretrained('/data1/dyh/models/RoBERTa/roberta-base-model',
-                                                             local_files_only=True)
+            self.text_encoder = RobertaModel.from_pretrained(RoBERTa_path, local_files_only=True)
             self.text_projection = FeatureResizer(
                 input_feat_size=self.text_encoder.config.hidden_size,
                 output_feat_size=pool_dim,

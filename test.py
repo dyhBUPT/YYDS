@@ -9,9 +9,6 @@ from data_manager import *
 from eval_metrics import eval_sysu, eval_regdb, eval_llcm
 from model import embed_net
 from utils import *
-import pdb
-import scipy.io
-import torchvision
 from os.path import join, dirname
 
 from utils_new import extract_query_feat, extract_gall_feat
