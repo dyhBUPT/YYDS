@@ -360,12 +360,12 @@ if __name__ == '__main__':
     method = ['baseline', 'constrained', 'extended', 'divided'][2]
 
     if dataset == 'sysu':
-        FEAT_DIR = '/data1/dyh/results/Refer-VIReID/SYSU-MM01/ABLATION/Text_E80_AMP_KLx3-TxtIoU_Joint/all'
-        # FEAT_DIR = '/data1/dyh/results/Refer-VIReID/SYSU-MM01/ABLATION/Text_E80_AMP_KLx3-TxtIoU_Joint/indoor'
+        FEAT_DIR = '/data1/dyh/results/Refer-VIReID/Git/SYSU_YYDS/all'
+        # FEAT_DIR = '/data1/dyh/results/Refer-VIReID/Git/SYSU_YYDS/indoor'
     elif dataset == 'regdb':
-        FEAT_DIR = '/data1/dyh/results/Refer-VIReID/RegDB/TextV2_E80'
+        FEAT_DIR = '/data1/dyh/results/Refer-VIReID/Git/RegDB_YYDS'
     elif dataset == 'llcm':
-        FEAT_DIR = '/data1/dyh/results/Refer-VIReID/LLCM/TextV2_E80'
+        FEAT_DIR = '/data1/dyh/results/Refer-VIReID/Git/LLCM_YYDS'
 
     SEARCH_SPACE = {
         'k1': [35],
