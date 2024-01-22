@@ -13,7 +13,7 @@ TBD
 1. Download datasets [SYSU-MM01](https://github.com/InnovArul/rgb_IR_personreid), 
 [RegDB](http://dm.dongguk.edu/link.html) and [LLCM](https://github.com/ZYK100/LLCM/tree/main).
 Then, please change correlated variables to your data path, i.e., `data_path` in `train.py`/`test.py`.
-The preprocessed SYSU-MM01 is also provided in baidu disk (TBD).
+The preprocessed SYSU-MM01 is also provided in [baidu disk](https://pan.baidu.com/s/1DH91RTF3Qev_M5bFGx3tXA?pwd=bupt).
 
 2. Download textual model [RoBERTa](https://huggingface.co/roberta-base).
 Then, please change the variable `RoBERTa_path` in `utils_new.py` to your model path.
@@ -32,7 +32,7 @@ Then, please change the variable `RoBERTa_path` in `utils_new.py` to your model 
 - datetime==5.2
 
 # Test
-For direct testing, please download our prepared checkpoints and extracted features from baidu disk (TBD).
+For direct testing, please download our prepared checkpoints and extracted features from [baidu disk](https://pan.baidu.com/s/1DH91RTF3Qev_M5bFGx3tXA?pwd=bupt).
 
 ### 1) Baseline on SYSU-MM01
 
