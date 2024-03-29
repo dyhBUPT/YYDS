@@ -1,7 +1,6 @@
 # YYDS
 **YYDS: Visible-Infrared Person Re-Identification with Coarse Description**
 
-[![arXiv](https://img.shields.io/badge/arXiv-2403.04183-<COLOR>.svg)](https://arxiv.org/abs/2403.04183)
 # Abstract
 TBD
 
