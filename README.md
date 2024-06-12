@@ -170,7 +170,7 @@ for different methods and datasets are listed here:
 |            | divided           | [10, 10, 0.3]    |
 |            | extended          | [10, 5, 0]       |
 |            | extended + MA-LQE | [10, 10, 3, 0]   |
-| SYSU-MM01  | k-reciprocal      | [25, 10, 0.3]    |
+| LLCM       | k-reciprocal      | [25, 10, 0.3]    |
 |            | constrained       | [15, 15, 0.4]    |
 |            | divided           | [25, 10, 0.5]    |
 |            | extended          | [25, 10, 0.3]    |
